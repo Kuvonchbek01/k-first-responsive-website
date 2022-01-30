@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
+
+/* GlOBAL */
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/gradient-background-1504464921xoc.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+}
+
+/* CONTAINER */
+.container{
+    max-width: 1250px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 67px;
+}
+
+.menu {
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+.menu-list {
+    display: flex ;
+    justify-content: space-between;
+    align-items:center;
+    max-width: 100%;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    max-width: 243px;
+    background-color: #FFC600;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.menu-item:not(:last-child){
+    margin-right: 10px;
+}
+
+.menu-item-link{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+.hero {
+    max-width: 1250px;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.hero-left {
+    max-width: 67.6%;
+    height: 400px;
+    background-image: url('../images/taco.jpg');
+    background-position:20% 100%;
+    background-size: cover;
+    background-repeat:no-repeat;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 20px;
+    flex-grow: 1;
+}
+.hero-left-heading {
+    font-weight: 900;
+    color: #272727;
+    background-color: #FFC600;
+    padding:15px 5px;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    letter-spacing: -1;
+}
+.hero-left-text {
+    font-weight: 900;
+    color: #272727;
+    background-color: #FFC600;
+    padding:5px 5px;
+    font-size: 15px;
+    margin-top: 0;
+}
+.hero-right {
+    max-width: 30.8%;
+    margin: 0;
+}
+.tacos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 388px;
+    width: 100%;
+    height: 192px;
+    background-color:#FFC600;
+    margin-bottom: 15px;
+    padding-right: 135px;
+        padding-left: 135px;
+        padding-top: 64px;
+        padding-bottom: 35px;
+}
+.price {
+    font-weight: 300;
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #272727;
+    letter-spacing: -5px;
+    text-align: center;
+    max-width: 120px;
+    padding-left: auto;
+    padding-right: auto;
+}
+.name {
+    font-weight: 900;
+    font-size: 15px;
+    color: #272727;
+    display: flex;
+    justify-content: center;
+}
+.Kombucha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 388px;
+    width: 100%;
+    height: 192px;
+    background-color:#FFC600;
+    padding-right: 135px;
+    padding-left: 135px;
+    padding-top: 64px;
+    padding-bottom: 35px;
+}
+.services {
+    max-width: 1250px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.services-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 299px;
+    height: 183px;
+    background-color:#fff;
+    padding: 10px;
+    
+}
+
+.services-card-title {
+    font-size: 17.55px;
+    color: #272727;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.services-card-text {
+    text-align: center;
+    font-size: 15px;
+    color: rgba(0,0,0,0.5);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.taco {
+    display: flex;
+    align-items:center;
+    max-width: 1250px;
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.taco-img {
+    margin-right: 50px;
+    max-width:399px;
+    max-height:299px;
+    padding-left: 20px;
+}
+
+.taco-action-title {
+    font-size: 22.5px;
+    color: #272727;
+    margin-top: 0;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+.taco-action-text {
+    font-size: 16px;
+    color: #272727;
+    margin-top: 0;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+.taco-action-text-2 {
+    font-size: 16px;
+    color: #272727;
+    margin-top: 0;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+.taco-action-button {
+    font-weight: 400;
+    font-size: 13.33px;
+    text-decoration: none;
+    color: #000;
+    background-color: #FFC600;
+    padding: 10px 20px;
+}
+.images-devider{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #272727;
+}
+
+.images-devider::before{
+    display:block;
+    content: '';
+    width: 512px;
+    height: 10px;
+    background:#ffff00;
+    margin-right: 40px;
+}
+
+.images-devider::after{
+    display: inline-block;
+    content: '';
+    width: 512px;
+    height: 10px;
+    background: yellow;
+    margin-left: 40px;
+}
+.random-images {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1250px;
+    width: 100%;
+    row-gap: 20px;
+    column-gap: 18px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+}
+
+@media( max-width: 1300px){
+    .container{
+        max-width: 1115px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 67px;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .menu{
+        max-width:1115px;
+    }
+
+    .menu-list {
+        display: flex ;
+        justify-content: space-between;
+        align-items:center;
+        max-width: 100%;
+        margin-right: 5px;
+    }
+
+    .menu-item {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width:155px;
+        list-style: none;
+        background-color: #FFC600;
+        padding-left: 70px;
+        padding-right: 70px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .menu-item:not(:last-child){
+        margin-right: 10px;
+    }
+
+    .menu-item-link{
+        text-decoration: none;
+        color: #000;
+        font-size: 20px;
+    }
+
+    .hero {
+        max-width: 1115px;
+        display: flex;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .hero-left {
+        max-width: 100%;
+        height: 400px;
+        background-image: url('../images/taco.jpg');
+        background-position:20% 100%;
+        background-size: cover;
+        background-repeat:no-repeat;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+        
+    }
+
+    .hero-right {
+        max-width: 31%;
+    }
+
+    .tacos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 300px;
+        width: 100%;
+        height: 192px;
+        background-color:#FFC600;
+        padding-right: 135px;
+        padding-left: 135px;
+        padding-top: 64px;
+        padding-bottom: 35px;
+        margin-bottom: 15px;
+    }
+
+    .price {
+        font-weight: 300;
+        font-size: 60px;
+        margin-top: 0;
+        margin-bottom: 25px;
+        color: #272727;
+        letter-spacing: -5px;
+        text-align: center;
+        padding-left: auto;
+        padding-right: auto;
+    }
+
+    .Kombucha {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 300px;
+        width: 100%;
+        height: 192px;
+        background-color:#FFC600;
+        padding-right: 135px;
+        padding-left: 135px;
+        padding-top: 64px;
+        padding-bottom: 35px;
+    }
+
+    .services {
+        max-width: 1150px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+    }
+    .services-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        max-width: 250px;
+        width: 100%;
+        background-color:#fff;
+        padding: 10px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        
+    }
+    
+    .services-card-title {
+        font-size: 17.55px;
+        color: #272727;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .services-card-text {
+        font-size: 15px;
+        color: rgba(0,0,0,0.5);
+    }
+
+    .random-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap:wrap;
+        max-width: 1150px;
+        width: 100%;
+        margin-bottom: 50px;
+        margin-right: 20px;
+    }
+
+}
+
+@media ( max-width: 905px) {
+    .menu {
+        max-width: 905px;
+        flex-wrap: wrap;
+    }
+    .menu-list{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+
+    .menu-item{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .hero{
+        display: inline-block ;
+        
+    }
+
+    .hero-left{
+        max-width: 100%;
+        margin-right:0px;
+        margin-bottom: 20px;
+    }
+
+    .hero-left-heading{
+        line-height: 30px;
+    }
+
+    .hero-right{
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+    .services{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .random-images{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media (max-width:656px) {
+    .menu-list{
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu-item:last-child{
+        margin-right: 10px;
+    }
+
+    .taco {
+        display: inline-block;
+        max-width: 656px;
+        width: 100%;
+        height: 350px;
+        background-color: #fff;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    .taco-img {
+        display: flex;
+        justify-content: flex-end;
+        max-width: 200px;
+        max-height:150px;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        
+    }
+    
+    .taco-action-title {
+        display: flex;
+        justify-content: center;
+        font-size: 22.5px;
+        color: #272727;
+        margin-top: 0;
+        margin-bottom: 15px;
+        letter-spacing: -1px;
+    }
+    
+    .taco-action-text {
+        font-size: 16px;
+        color: #272727;
+        margin-top: 0;
+        margin-bottom: 15px;
+        letter-spacing: -1px;
+        text-align: center;
+    }
+
+    .taco-action-text-2 {
+        font-size: 16px;
+        color: #272727;
+        margin-top: 0;
+        margin-bottom: 20px;
+        letter-spacing: -1px;
+        text-align: center;
+    }
+
+    .taco-action-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 125px;
+        font-weight: 400;
+        font-size: 13.33px;
+        text-decoration: none;
+        color: #000;
+        background-color: #FFC600;
+        padding: 10px 20px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .hero-right{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .services{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .random-images{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
